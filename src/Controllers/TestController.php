@@ -1,6 +1,6 @@
 <?php
 
-namespace Hxc\ToolLaravel\Controller;
+namespace Hxc\HxcLaravelTool\Controllers;
 
 use App\Http\Controllers\Controller;
 
