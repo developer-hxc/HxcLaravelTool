@@ -1,0 +1,29 @@
+{
+    "name": "hxc/hxc-tool-laravel",
+    "description": "laravel开发工具",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "韩韩韩",
+            "email": "3365997294@qq.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Hxc\\HxcLaravelTool\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hxc\\HxcLaravelTool\\ServiceProvider"
+            ],
+            "aliases": {
+                "HxcToolLaravel": "Hxc\\HxcLaravelTool\\Facades\\HxcToolLaravel"
+            }
+        }
+    }
+}
