@@ -1,7 +1,7 @@
 {
     "name": "hxc/hxc-tool-laravel",
     "description": "laravel开发工具",
-    "minimum-stability": "dev",
+    "minimum-stability": "alpha",
     "license": "MIT",
     "authors": [
         {
