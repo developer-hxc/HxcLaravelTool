@@ -16,9 +16,6 @@ class ServiceProvider extends LaravelServiceProvider
             __DIR__.'/Configs/hxc.php' => config_path('hxc.php')
         ],'hxc-config');
         $this->publishes([
-            __DIR__.'/Routes/api.php' => base_path('routes/api.php')
-        ],'hxc-routes');
-        $this->publishes([
             __DIR__.'/Helpers/Functions.php' => app_path('Helpers/Functions.php')
         ],'hxc-functions');
     }

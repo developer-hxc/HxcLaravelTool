@@ -32,9 +32,9 @@
     },
     "scripts": {
         "post-package-install": [
+            "@php artisan lang:publish zh_CN",
             "@php artisan vendor:publish --tag=hxc-config",
             "@php artisan vendor:publish --tag=hxc-functions",
-            "@php artisan vendor:publish --tag=hxc-routes",
             "@php artisan vendor:publish --provider=\"Dingo\\Api\\Provider\\LaravelServiceProvider\""
         ]
     }
