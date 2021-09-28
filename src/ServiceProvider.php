@@ -12,12 +12,12 @@ class ServiceProvider extends LaravelServiceProvider
 
     public function boot()
     {
+        $this->loadMigrationsFrom(__DIR__.'/Migrations/');
+
         $this->publishes([
-            __DIR__.'/Configs/hxc.php' => config_path('hxc.php')
-        ],'hxc-config');
-        $this->publishes([
+            __DIR__.'/Configs/hxc.php' => config_path('hxc.php'),
             __DIR__.'/Helpers/Functions.php' => app_path('Helpers/Functions.php')
-        ],'hxc-functions');
+        ],'hxc-init');
     }
 
     public function register()
